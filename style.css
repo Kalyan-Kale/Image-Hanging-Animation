@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+    /* overflow: hidden; */
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    background: #111;
+    position: relative;
+}
+
+.elem{
+    height: 120px;
+    width: 100%;
+    /* background: red; */
+    border-bottom: 2px solid white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    transition: all ease-out 1s;
+}
+
+.elem h1{
+    font-size: 6vw;
+}
+
+.elem img{
+    height: 120px;
+    width: 200px;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    opacity: 0;
+    transform: rotate(10deg);
+    transition: all ease-out 1s;
+    z-index: 2;
+    mix-blend-mode: difference;
+}
